@@ -7,7 +7,7 @@ This assignment trains a robust classifier against FGSM and PGD attacks using av
 
 - [Data accessible to the adversary](#dataset-accessible-to-adversary)
 - [Approach used](#approach-used)
-- [Results of implemented approach](#results-implemented-approach)]
+- [Results of implemented approach](#results-implemented-approach)
 - [Alternative approaches used](#alternative-approaches-used)
 - [Results of alternative implemented approaches](#result-alternative-approach)
 
