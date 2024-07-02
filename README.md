@@ -3,6 +3,10 @@
 
 This assignment trains a robust classifier using access to a training dataset available.
 
+## Table of Contents
+
+- [Data accessible to the adversary](#dataset-accessible-to-adversary)
+
 ## Data accessible to the adversary
 - Partial training data of the victim model.
 - Information on the structure of the dataset.
