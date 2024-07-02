@@ -27,7 +27,6 @@ This table informs about the hyperparameters and other specifics of our experime
 | Temperature               | 2.0                                |
 | Weight Decay              | 5e-4                               |
 | Momentum                  | 0.9                                |
-|---------------------------|------------------------------------|
 
 ### Results
 The above approach results in a clean accuracy of 52.9%, robustness (FGSM) - 45% and robustness (PGD) - 30.1%.
