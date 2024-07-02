@@ -22,21 +22,21 @@ We use the Ensemble Learning technique to obtain better predictive performance a
 
 This table informs about the hyperparameters and other specifics of our experiments.
 
-            | Name                      | Information                        |
-            |---------------------------|------------------------------------|
-            | Model used                | ResNet50                           | 
-            | Pre-trained weights       | ResNet50_Weights.DEFAULT           | 
-            | Number of ensemble models | 3                                  | 
-            | Learning Rate             | 0.001                              | 
-            | Epochs                    | 20                                 | 
-            | Optimizer                 | SGD                                |
-            | Epsilon                   | 0.031 (8/255)                      |
-            | alpha (step size)         | 0.007                              |
-            | Perturbation steps        | 5                                  |
-            | alpha (distillation)      | 0.7                                |
-            | Temperature               | 2.0                                |
-            | Weight Decay              | 5e-4                               |
-            | Momentum                  | 0.9                                |
+| Name                      | Information                        |
+|---------------------------|------------------------------------|
+| Model used                | ResNet50                           | 
+| Pre-trained weights       | ResNet50_Weights.DEFAULT           | 
+| Number of ensemble models | 3                                  | 
+| Learning Rate             | 0.001                              | 
+| Epochs                    | 20                                 | 
+| Optimizer                 | SGD                                |
+| Epsilon                   | 0.031 (8/255)                      |
+| alpha (step size)         | 0.007                              |
+| Perturbation steps        | 5                                  |
+| alpha (distillation)      | 0.7                                |
+| Temperature               | 2.0                                |
+| Weight Decay              | 5e-4                               |
+| Momentum                  | 0.9                                |
 
 ### Results of implemented approach
 The above approach results in a clean accuracy of 52.9%, robustness (FGSM) - 45% and robustness (PGD) - 30.1%.
