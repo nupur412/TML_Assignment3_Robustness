@@ -28,18 +28,18 @@ This table informs about the hyperparameters and other specifics of our experime
 | Pre-trained weights       | ResNet50_Weights.DEFAULT           | 
 | Number of ensemble models | 3                                  | 
 | Learning Rate             | 0.001                              | 
-| Epochs                    | 20                                 | 
+| Epochs                    | 11                                 | 
 | Optimizer                 | SGD                                |
-| Epsilon                   | 0.031 (8/255)                      |
+| Epsilon                   | 0.050                              |
 | alpha (step size)         | 0.007                              |
 | Perturbation steps        | 5                                  |
 | alpha (distillation)      | 0.7                                |
 | Temperature               | 2.0                                |
-| Weight Decay              | 5e-4                               |
+| Weight Decay              | 1e-4                               |
 | Momentum                  | 0.9                                |
 
 ### Results of implemented approach
-The above approach results in a clean accuracy of 52.9%, robustness (FGSM) - 45% and robustness (PGD) - 30.1%.
+The above approach results in a clean accuracy of 55.1%, robustness (FGSM) - 63.6% and robustness (PGD) - 31.3%.
 
 ## Alternative approaches used
 ### Using TRADES technique
