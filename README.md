@@ -42,7 +42,7 @@ The above approach results in a clean accuracy of 52.9%, robustness (FGSM) - 45%
 
 ## Alternative approaches used
 ### Using TRADES technique
-The implemented alternative approach can be accessed in the [**TML_Assignment3_Alternative_Approach.ipynb**](https://github.com/nupur412/TML_Assignment3_Robustness/blob/main/TML_Assignment3_Alternative_Approach.ipynb) file. The trained model can be found [here](https://drive.google.com/file/d/1SwzSApKKvtEp6OeF7v-HboRIA76GXIU0/view?usp=drive_link)
+The implemented alternative approach can be accessed in the [**TML_Assignment3_Alternative_Approach.ipynb**](https://github.com/nupur412/TML_Assignment3_Robustness/blob/main/TML_Assignment3_Alternative_Approach.ipynb) file. The trained model using this approach can be found [here](https://drive.google.com/file/d/1SwzSApKKvtEp6OeF7v-HboRIA76GXIU0/view?usp=drive_link).
 We use the TRADES loss function to obtain a better tradeoff, which minimizes the regularized surrogate loss, like cross entropy loss in our case, for doing the adversarial training. The trade-off regularization parameter beta is introduced in this loss function to control the robustness of the model. Since we intend to train the most robust model, we use a beta value of 6.0 out of the range of 0.0 to 6.0, where 6.0 suggests high robustness. We train the pre-trained resnet50 model for about 100 epochs. We chose resnet50 out of all the allowed models (resnet18, resnet34, and resnet50) since deeper models tend to be more robust. We choose the other hyperparameters by finetuning and referring to the values used in the official implementation of the TRADES loss function.
 
 #### Results of alternative implemented approaches
