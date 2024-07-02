@@ -6,6 +6,8 @@ This assignment trains a robust classifier using access to a training dataset av
 ## Table of Contents
 
 - [Data accessible to the adversary](#dataset-accessible-to-adversary)
+- [Approach used](#approach-used)
+- [Alternative approaches used](#alternative-approaches-used)
 
 ## Data accessible to the adversary
 - Partial training data of the victim model.
@@ -35,7 +37,7 @@ This table informs about the hyperparameters and other specifics of our experime
 ### Results
 The above approach results in a clean accuracy of 52.9%, robustness (FGSM) - 45% and robustness (PGD) - 30.1%.
 
-## Alternative approach used
+## Alternative approaches used
 ### Using ensemble learning with all allowed models
 
 ### Using TRADES technique
