@@ -45,10 +45,11 @@ For 30% of the samples in the evaluation dataset, the above approach results in 
 **robustness (PGD) - 31.6%**
 
 
-**Additional Observation**: While training on just **3 model instances** of Resnet 50, this was the best balance of robustness and accuracy we could obtain for the 12th epoch - **clean accuracy of 55.2%**
+**Additional Observation**: 
+- While training on just **3 model instances** of Resnet 50, this was the best balance of robustness and accuracy we could obtain for the 12th epoch - **clean accuracy of 55.2%**
 **robustness (FGSM) - 59.2%**
 **robustness (PGD) - 33.3%**
-The model trained for 15th epoch also showed robustness accuracy (FGSM) of 69%, but a slightly less robustness accuracy (PGD) of 31.5% for a clean accuracy of 54.9% 
+- The model trained for 15th epoch also showed robustness accuracy (FGSM) of 69%, but a slightly less robustness accuracy (PGD) of 31.5% for a clean accuracy of 54.9% 
 
 ## Alternative approaches used
 ### Using TRADES technique
