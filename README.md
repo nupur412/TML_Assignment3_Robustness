@@ -28,7 +28,7 @@ This table informs about the hyperparameters and other specifics of our experime
 | Pre-trained weights       | ResNet50_Weights.DEFAULT           | 
 | Number of ensemble models | 3                                  | 
 | Learning Rate             | 0.001                              | 
-| Epochs                    | 12                                 | 
+| Epochs                    | 13                                 | 
 | Optimizer                 | SGD                                |
 | Epsilon                   | 0.050                              |
 | alpha (step size)         | 0.007                              |
