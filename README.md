@@ -39,7 +39,7 @@ This table informs about the hyperparameters and other specifics of our experime
 | Momentum                  | 0.9                                |
 
 ### Results of implemented approach
-The above approach results in a clean accuracy of 55.2%, robustness (FGSM) - 59.2% and robustness (PGD) - 33.3%.
+For 30% of the samples in the evaluation dataset, the above approach results in a clean accuracy of 55.2%, robustness (FGSM) - 59.2% and robustness (PGD) - 33.3%.
 
 ## Alternative approaches used
 ### Using TRADES technique
