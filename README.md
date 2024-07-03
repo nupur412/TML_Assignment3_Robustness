@@ -10,6 +10,7 @@ The main goal of the assignment is to train a classifier that can be robust agai
 - [Results of implemented approach](#results-of-implemented-approach)
 - [Alternative approaches used](#alternative-approaches-used)
 - [Results of alternative implemented approaches](#results-of-alternative-implemented-approaches)
+- [Ideas that we could not implement but can improve the current implementation](#ideas-that-we-could-not-implement-but-can-improve-the-current-implementation)
 
 ## Data accessible to the adversary
 - Partial training data of the victim model.
@@ -44,6 +45,8 @@ For 30% of the samples in the evaluation dataset, the above approach results in 
 **robustness (FGSM) - 59.2%**
 **robustness (PGD) - 33.3%**
 
+**Additional Observation**: The model trained for 15th epoch also showed robustness accuracy (FGSM) of 69%, but a slightly less robustness accuracy (PGD) of 31.5% for a clean accuracy of 54.9% 
+
 ## Alternative approaches used
 ### Using TRADES technique
 The implemented alternative approach can be accessed in the [**TML_Assignment3_Alternative_Approach.ipynb**](https://github.com/nupur412/TML_Assignment3_Robustness/blob/main/TML_Assignment3_Alternative_Approach.ipynb) file. The trained model using this approach can be found [here](https://drive.google.com/file/d/1SwzSApKKvtEp6OeF7v-HboRIA76GXIU0/view?usp=drive_link).
@@ -60,5 +63,8 @@ We implemented a technique similar to our final approach, the only difference wa
 ### Adversarial Training for 1 model using FGSM and PGD
 We used FGSM and PGD for adversarial training, which resulted in a clean accuracy of less than 50%.
 
+## Ideas that we could not implement, but can improve the current implementation
+- Applying Transformations to the dataset images could've proved beneficial, as it can help the student model to generalize better. This could've also resulted in a higher robustness accuracy against PGD attack, as transformations can disrupt the gradients, thus improving gradient masking and making it difficult to do a successful PGD attack.
+- Making use of silu activation function instead of ReLU, as silu is shown in studies to work considerably better than others for better adversarial training.
 
 
